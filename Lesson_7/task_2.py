@@ -8,8 +8,8 @@ class Category:
             my_string += _ + " "
         return my_string
 
-    @staticmethod
-    def add(category):
+    @classmethod
+    def add(cls, category):
         try:
             Category.categories.index(category)
         except ValueError:
